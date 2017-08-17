@@ -10,7 +10,7 @@
 
 var ImageFactory;
 var resizeIfNecessary = function(blob, imageSize, quality) {
-    if (!ImageFactory)
+    	if (!ImageFactory && OS_IOS)
 		ImageFactory = require('ti.imagefactory');
 		
 	var quality = quality || 0.5;
@@ -24,7 +24,7 @@ var resizeIfNecessary = function(blob, imageSize, quality) {
 		return resizeCompressAndroid(blob, maxSize, quality);
 	}
 
-	
+
 	var width = blob.width;
 	var height = blob.height;
 	var maxWidth = maxSize;
