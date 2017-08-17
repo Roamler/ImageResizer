@@ -1,3 +1,13 @@
+/**
+
+ This is the RoamlerImageResizer created for the Roamler app to resize & compress images.
+ Original source can be found here: https://github.com/Roamler/ImageResizer
+ Additional functions and features are appreciated as a pull request.
+ 
+ Creator: Rene Pot / Roamler.com
+ 
+**/
+
 var ImageFactory;
 var resizeIfNecessary = function(blob, imageSize, quality) {
     if (!ImageFactory)
