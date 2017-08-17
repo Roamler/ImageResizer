@@ -70,3 +70,7 @@ function resizeCompressAndroid(blob, size, quality){
 	var returnFile = file.read();
 	return returnFile;
 };
+
+module.exports = {
+	resizeIfNecessary: resizeIfNecessary
+};
