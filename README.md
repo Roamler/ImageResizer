@@ -14,3 +14,5 @@ Download the `js` file and add them to the `app/lib/` directory.
 ## Usage
 
 Require the JS file anywhere in your project and just call the resize function with the quality and dimensions you want. 
+
+    require('RoamlerImageResizer').resizeIfNecessary(blob, 500, 0.3);
